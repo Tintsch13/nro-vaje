@@ -31,6 +31,11 @@ function figure(n)
     hold on;
     plot(x_circle, y_circle, 'y', 'LineWidth', 2);  % Izris loka krožnice (zeleno)
     hold off;
+        axis equal;
+    title('Naključno generirane točke znotraj krožnice');
+    legend('Znotraj krožnice', 'Krožnica');
+    xlabel('X os');
+    ylabel('Y os');
 end
 
 
