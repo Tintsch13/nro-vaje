@@ -1,0 +1,169 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6443,        161]
+NotebookOptionsPosition[      5866,        143]
+NotebookOutlinePosition[      6268,        159]
+CellTagsIndexPosition[      6225,        156]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"f", "[", "t_", "]"}], "=", 
+   RowBox[{
+    RowBox[{"Sin", "[", "t", "]"}], " ", 
+    RowBox[{"t", "^", "2"}], " ", 
+    RowBox[{"Exp", "[", 
+     RowBox[{"-", "t"}], "]"}]}]}], ";"}], "\n", 
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Evaluate", "[", 
+        RowBox[{"Normal", "[", 
+         RowBox[{"Series", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Sin", "[", "t", "]"}], " ", 
+            RowBox[{"t", "^", "2"}], " ", 
+            RowBox[{"Exp", "[", 
+             RowBox[{"-", "t"}], "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"t", ",", " ", "2", ",", " ", "n"}], "}"}]}], "]"}], 
+         "]"}], "]"}], ",", 
+       RowBox[{"f", "[", "t", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "4"}], "}"}], ",", " ", 
+     RowBox[{"PlotRange", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "4"}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1"}], ",", " ", "1"}], "}"}]}], "}"}]}], ",", " ", 
+     RowBox[{"PlotLegends", "->", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\"\<Aproksimacija z redom\>\"", "<>", 
+         RowBox[{"ToString", "[", "n", "]"}]}], ",", 
+        "\"\<Funkcija f(t)\>\""}], "}"}]}], ",", 
+     RowBox[{"PlotLabel", "->", "\"\<aproksimacija s Taylorjevo vrsto\>\""}], 
+     ",", 
+     RowBox[{"AxesLabel", "->", 
+      RowBox[{"{", 
+       RowBox[{"\"\<t\>\"", ",", "\"\<f(t)\>\""}], "}"}]}]}], 
+    "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", " ", "1", ",", " ", "\"\<Red pribl\[ZHacek]ka:\>\""}],
+       "}"}], ",", " ", "1", ",", " ", "10", ",", "1"}], "}"}]}], 
+  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.9089058767049046`*^9, 3.9089058767069063`*^9}, {
+  3.9089066117653008`*^9, 3.9089066132410975`*^9}, {3.9089513521578455`*^9, 
+  3.9089513567478466`*^9}, {3.908951403979432*^9, 3.9089515018396854`*^9}, {
+  3.9089515410682383`*^9, 3.9089516173614016`*^9}, {3.908951659443217*^9, 
+  3.908951664048317*^9}, {3.908951714845192*^9, 3.908951748303093*^9}, {
+  3.908951793453658*^9, 3.9089518885097456`*^9}, {3.9089520005180736`*^9, 
+  3.9089520764041376`*^9}, {3.908952856210981*^9, 3.9089528912297735`*^9}, {
+  3.9089529295899334`*^9, 3.908952996914039*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"482f5bbb-33b9-4cbb-b763-d11b7ddfb48c"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`n$$ = 6, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`n$$], 1, "Red pribl\[ZHacek]ka:"}, 1, 10, 1}}, 
+    Typeset`size$$ = {541.1999999999999, {117., 121.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`n$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         Evaluate[
+          Normal[
+           Series[
+           Sin[$CellContext`t] $CellContext`t^2 
+            Exp[-$CellContext`t], {$CellContext`t, 2, $CellContext`n$$}]]], 
+         $CellContext`f[$CellContext`t]}, {$CellContext`t, 0, 4}, 
+        PlotRange -> {{0, 4}, {-1, 1}}, 
+        PlotLegends -> {
+         "Aproksimacija z redom" <> ToString[$CellContext`n$$], 
+          "Funkcija f(t)"}, PlotLabel -> "aproksimacija s Taylorjevo vrsto", 
+        AxesLabel -> {"t", "f(t)"}], 
+      "Specifications" :> {{{$CellContext`n$$, 1, "Red pribl\[ZHacek]ka:"}, 1,
+          10, 1}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{590., {160.13403309800196`, 165.86596690199804`}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.9089518097304373`*^9, 3.908951813985194*^9}, {
+  3.9089518465609684`*^9, 3.908951852791791*^9}, {3.9089518933796644`*^9, 
+  3.9089519320828466`*^9}, {3.908952005516388*^9, 3.9089520419279394`*^9}, {
+  3.9089520776004615`*^9, 3.9089520818699274`*^9}, {3.9089529305627437`*^9, 
+  3.9089529478630466`*^9}, {3.908952999615055*^9, 3.9089530146907973`*^9}},
+ CellLabel->"Out[4]=",ExpressionUUID->"49ffa360-837a-4367-bc4a-d3dfb899e3bf"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9089513907626457`*^9, 
+  3.908951399929864*^9}},ExpressionUUID->"ec192a54-8935-4c46-bc43-\
+e3c075f16dd8"]
+},
+WindowSize->{1043.25, 735.75},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6eb08eaf-22c2-4c02-999c-cde6ff7e4a91"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2644, 64, 200, "Input",ExpressionUUID->"482f5bbb-33b9-4cbb-b763-d11b7ddfb48c"],
+Cell[3227, 88, 2466, 47, 368, "Output",ExpressionUUID->"49ffa360-837a-4367-bc4a-d3dfb899e3bf"]
+}, Open  ]],
+Cell[5708, 138, 154, 3, 28, "Input",ExpressionUUID->"ec192a54-8935-4c46-bc43-e3c075f16dd8"]
+}
+]
+*)
+
